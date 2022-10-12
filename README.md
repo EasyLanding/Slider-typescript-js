@@ -1,3 +1,7 @@
+# Небольшая UI библиотека Slider на React.js и React.ts
+
+Stack -ChakraUi(можете сменить на обычную верстку) -Node Sass(чтобы читать sass файлы, не обязательно) -PropTypes - типы для пропов в варианте React.js Запуск приложения стандартно npm start на выбор 2 слайдера, для "шапки" и для продукта(например часть контента в маркетплейсе) Стили можно менять как удобно, сделана заготовка под апи(useEffect), ts по желанию можно сделать более строгим.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

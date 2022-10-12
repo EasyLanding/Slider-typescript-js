@@ -1,26 +1,45 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Swiper from './common-ts/Slider/SlideComponent/Swiper'
+import Slider from './common-ts/SliderBlogPage/SlideComponent/Slider'
+import SwiperJs from './common/Slider/SlideComponent/Slider'
+import SliderJs from './common/SliderBlogPage/SlideComponent/Slider'
+import { Box, Text } from '@chakra-ui/react'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Box>
+      <Box>
+        <Text
+          fontWeight="bold"
+          fontSize="36px"
+          display="flex"
+          justifyContent="center"
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+          TypeScript
+        </Text>
+        <Box marginBottom="100px" marginTop="100px">
+          <Swiper autoPlay={false} autoPlayTime={5000} />
+        </Box>
+        <Box>
+          <Slider autoPlay={false} autoPlayTime={5000} />
+        </Box>
+      </Box>
 
-export default App;
+      <Box>
+        <Text
+          fontWeight="bold"
+          fontSize="36px"
+          display="flex"
+          justifyContent="center"
+        >
+          JavaScript
+        </Text>
+        <Box marginBottom="100px" marginTop="100px">
+          <SwiperJs autoPlay={false} autoPlayTime={5000} />
+        </Box>
+        <Box>
+          <SliderJs autoPlay={false} autoPlayTime={5000} />
+        </Box>
+      </Box>
+    </Box>
+  )
+}
